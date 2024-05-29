@@ -42,7 +42,7 @@
   $fio = (isset($_POST['fio']) ? $_POST['fio'] : '');
   $phone = (isset($_POST['phone']) ? $_POST['phone'] : '');
   $email = (isset($_POST['email']) ? $_POST['email'] : '');
-  $birthday = (isset($_POST['birthday']) ? strtotime($_POST['birthday']) : '');
+  $birthday = (isset($_POST['birthday']) ? date('Y-m-d', strtotime($_POST['birthday'])) : '');
   $gender = (isset($_POST['gender']) ? $_POST['gender'] : '');
   $like_lang = (isset($_POST['like_lang']) ? $_POST['like_lang'] : '');
   $biography = (isset($_POST['biography']) ? $_POST['biography'] : '');
