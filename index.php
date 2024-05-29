@@ -79,9 +79,9 @@
   elseif(!preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', $email)){
     $errors = 'Неверное значение поля "email"';
   }
-  elseif(!is_numeric($birthday) || strtotime("now") < $birthday){
-    $errors = 'Укажите корректно дату';
-  }
+  //elseif(!is_numeric($birthday) || strtotime("now") < $birthday){
+  //  $errors = 'Укажите корректно дату';
+  //}
   elseif($gender != "male" && $gender != "female"){
     $errors = 'Укажите пол';
   }
